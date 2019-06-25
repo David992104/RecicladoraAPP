@@ -23,6 +23,7 @@ public class UpdateMatFragment extends Fragment {
     EditText txtDesc;
     EditText txtPrecio;
     Button btnBuscar, btnActualizar;
+    String id;
 
     @Nullable
     @Override
@@ -40,7 +41,7 @@ public class UpdateMatFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 if (txtId.getText().toString().trim().length() != 0) {
-                    String id = txtId.getText().toString().trim();
+                    id = txtId.getText().toString().trim();
                     ConexionDB conexionDB = new ConexionDB(getContext(), null, 1);
                     SQLiteDatabase sqLiteDatabase = conexionDB.getReadableDatabase();
                     Cursor cursor = sqLiteDatabase.rawQuery("SELECT * FROM material WHERE idMat='" + id + "';", null);
@@ -66,7 +67,7 @@ public class UpdateMatFragment extends Fragment {
                 registre.put("descripcion", txtDesc == null ? "" : txtDesc.getText().toString().trim());
                 registre.put("precio", Float.parseFloat(txtPrecio.getText().toString().trim()));
 
-                sqLiteDatabase.insert("material", null, registre);
+                sqLiteDatabase.update("material", registre, "idMat='"+id+"'", null);
 
                 txtPrecio.setText(null);
                 txtDesc.setText(null);
