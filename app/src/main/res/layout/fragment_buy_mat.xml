@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_grey_400"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Comprar Material"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fr.ganfra.materialspinner.MaterialSpinner
+                android:id="@+id/spinnerBuyMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                app:ms_arrowColor="@color/colorPrimary"
+                app:ms_arrowSize="20dp"
+                app:ms_floatingLabelColor="@color/md_grey_800"
+                app:ms_floatingLabelText="Material a comprar"
+                app:ms_hint="Material a comprar"
+                app:ms_hintColor="@color/md_grey_800"
+                app:ms_hintTextSize="18sp"
+                app:ms_multiline="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBuyAcuanto"
+                android:textColor="@color/md_black_1000"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/md_grey_800">
+
+                    <EditText
+                        android:id="@+id/etBuyCuantoMat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Cantidad en kilogramos"
+                        android:inputType="numberDecimal"
+                        android:textColor="@color/md_black_1000"
+                        android:textColorHint="@color/md_grey_800" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kg"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pagar : "
+                android:textSize="20dp"
+                android:id="@+id/tvBuyPagar"/>
+
+            <Button
+                android:id="@+id/bBuyCotizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Cotizar" />
+
+            <Button
+                android:id="@+id/bBuyComprar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="Comprar" />
+
+            <Button
+                android:id="@+id/bBuyCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Cancelar" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

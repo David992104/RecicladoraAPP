@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscar Material"
+        android:textAlignment="center"
+        android:textColor="@color/md_black_1000"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etSearchMat"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:hint="Id material"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/bSearchBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvSearchMat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Material" />
+
+    <TextView
+        android:id="@+id/tvSearchDesd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion" />
+
+    <TextView
+        android:id="@+id/tvSearchCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Costo" />
+
+    <Button
+        android:id="@+id/bSearchLimpiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Limpiar" />
+
+
+</LinearLayout>

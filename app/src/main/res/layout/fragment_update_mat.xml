@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actualizar Materiales"
+        android:textColor="@color/md_grey_50"
+        android:textSize="25sp"
+        android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etActMat"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:hint="Id material"
+                android:inputType="number"/>
+
+            <Button
+                android:id="@+id/bActBuscar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buscar" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tvActMat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Material" />
+
+        <EditText
+            android:id="@+id/tvActDesd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripcion" />
+
+        <EditText
+            android:id="@+id/tvActCost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Costo"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/bActualizar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Actualizar" />
+
+</LinearLayout>

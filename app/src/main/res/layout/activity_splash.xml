@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/md_grey_800"
+    android:paddingTop="150dp"
+    tools:context=".SplashActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/empleados"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/md_white_1000"
+        app:civ_border_overlay="false"
+        android:layout_marginBottom="50dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar3"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvComplete"
+        android:text=""
+        android:textSize="17sp"
+        android:textColor="@color/md_grey_900"
+        android:layout_gravity="center"
+        android:textAlignment="center"/>
+
+</LinearLayout>

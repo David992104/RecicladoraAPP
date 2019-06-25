@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="all">
+
+        <item
+            android:id="@+id/nav_ver_mat"
+            android:icon="@drawable/ic_list"
+            android:title="Materiales " />
+        <item
+            android:id="@+id/nav_ver_com"
+            android:icon="@drawable/ic_list"
+            android:title="Compras " />
+
+        <item android:title="Realizar Compra">
+            <menu>
+                <item
+                    android:id="@+id/nav_buy_mat"
+                    android:icon="@drawable/ic_buy"
+                    android:title="Comprar Material" />
+            </menu>
+        </item>
+
+        <item android:title="Operaciones Materiales">
+            <menu>
+                <item
+                    android:id="@+id/nav_act_mat"
+                    android:icon="@drawable/ic_refresh"
+                    android:title="Editar Materiales" />
+                <item
+                    android:id="@+id/nav_search_mat"
+                    android:icon="@drawable/ic_search"
+                    android:title="Buscar Material " />
+                <item
+                    android:id="@+id/nav_add_mat"
+                    android:icon="@drawable/ic_add"
+                    android:title="Añadir MAterial " />
+                <item
+                    android:id="@+id/nav_delet_mat"
+                    android:icon="@drawable/ic_delete"
+                    android:title="Eliminar Material" />
+            </menu>
+        </item>
+
+        <item android:title="Salir">
+            <menu>
+                <item
+                    android:id="@+id/nav_exit"
+                    android:icon="@drawable/ic_exit"
+                    android:title="Salir" />
+            </menu>
+        </item>
+    </group>
+</menu>
